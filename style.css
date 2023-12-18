@@ -108,20 +108,20 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 2fr;
 }
 
 .search-bar {
-    height: 25px;
-    background-color: #cbd5e1;
+    height: 26px;
+    background-color: #e2e8f0;
     border-radius: 10px;
     border: none;
-    width: 500px;
 }
 
 .bar-search {
     display: grid;
+    grid-template-columns: auto 1fr;
     grid-auto-flow: column;
     justify-content: start;
     align-items: center;
