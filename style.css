@@ -61,9 +61,24 @@ body {
     font-weight: 600;
 }
 
+.icon:hover,
+.dashboard-icon:hover,
+.tasks-icon:hover,
+.privacy-icon:hover,
+.settings-icon:hover,
+.support-icon:hover,
+.communities-icon:hover,
+.message-icon:hover,
+.history-icon:hover,
+.profile-icon:hover,
+.home-icon:hover {
+    cursor: pointer;
+    color: #083344;
+}
+
 .dashboard .home-icon,
 .dashboard .others {
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 .dashboard-icon,
@@ -90,3 +105,27 @@ body {
 }
 
 /** Header CSS **/
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.search-bar {
+    height: 25px;
+    background-color: #cbd5e1;
+    border-radius: 10px;
+    border: none;
+    width: 500px;
+}
+
+.bar-search {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    margin-left: 35px;
+    margin-top: 15px;
+    gap: 15px;
+}
