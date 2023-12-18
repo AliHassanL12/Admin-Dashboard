@@ -1,9 +1,40 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: #cbd5e1;
+    display: block;
 }
 
 .container {
+    height: 100vh;
     display: grid;
-    grid-template: repeat(3, 1fr) / 1fr 4fr;
+    grid-template: 1fr 3fr 1fr / 1fr 4fr;
+}
+
+.container .dashboard {
+    grid-row: span 3;
+    background-color: #0ea5e9;
+}
+
+.container .header {
+    grid-column: 2 / 3;
+    background-color: white;
+    border: solid 2px #cbd5e1;
+}
+
+.container .main-content {
+    grid-row: 2/4;
+    grid-column: 2/3;
     background-color: aqua;
+}
+
+.dashboard-icon,
+.icon {
+    color: white;
+}
+
+.dashboard-icon .icon {
+    fill: white;
+    width: 20px;
+    height: 20px;
 }
