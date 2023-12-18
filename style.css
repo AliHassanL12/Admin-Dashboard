@@ -4,7 +4,7 @@ body {
     font-family: 'Outfit', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #cbd5e1;
+    background-color: #e2e8f0;
     display: block;
 }
 
@@ -23,13 +23,15 @@ body {
     grid-column: 2 / 3;
     background-color: white;
     border: solid 2px #cbd5e1;
+    box-shadow: 0px 5px 5px rgb(203,213,225);
 }
 
 .container .main-content {
     grid-row: 2/4;
     grid-column: 2/3;
-    background-color: aqua;
 }
+
+/** Dashboard CSS **/
 
 .dashboard-icon,
 .icon {
@@ -38,7 +40,53 @@ body {
 }
 
 .dashboard-icon .icon {
-    fill: white;
     width: 50px;
     height: 50px;
 }
+
+.dashboard .settings-icon,
+.dashboard .privacy-icon,
+.dashboard .support-icon,
+.dashboard .home-icon,
+.dashboard .message-icon,
+.dashboard .profile-icon,
+.dashboard .history-icon,
+.dashboard .profile-icon,
+.dashboard .tasks-icon,
+.dashboard .communities-icon {
+    margin-left: 12px;
+    gap: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dashboard .home-icon,
+.dashboard .others {
+    margin-top:30px;
+}
+
+.dashboard-icon,
+.tasks-icon,
+.privacy-icon,
+.settings-icon,
+.support-icon,
+.communities-icon,
+.message-icon,
+.history-icon,
+.profile-icon,
+.home-icon {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    padding: 10px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+/** Header CSS **/
