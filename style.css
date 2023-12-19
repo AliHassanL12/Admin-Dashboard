@@ -190,9 +190,8 @@ div .enlarged {
 
 .main-content{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1.5fr;
     grid-template-rows: 0.1fr 1fr;
-    border: solid red;
     margin-left: 20px;
 }
 
@@ -200,10 +199,10 @@ div .enlarged {
     grid-column: 1;
     grid-row: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(3, 1fr);
-    border: solid red;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .project-item h3 {
@@ -215,5 +214,42 @@ div .enlarged {
     font-size: 12px;
     display: grid;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 8px;
+    position: relative;
+    border-left: 6px solid #fbbf24;
+}
+
+.icon-actions {
+    position: absolute;
+    right: 16px;
+    bottom: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: bottom;
+    gap: 15px;
+}
+
+.announcements-trending {
+    grid-column: 2 / 3;
+    grid-row: span 2;
+    margin-left: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 10px;
+}
+
+.announcements div {
+    background-color: white;
+    border-bottom: solid 1px #9ca3af;
+    box-shadow: 0 2px 10px rgb(156,163,175);
+    border-radius: 8px;
+    padding: 10px 30px 20px 30px;
+    font-size: 12px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.announcements h3 {
+    margin: 8px 0px 10px 0px;
 }
