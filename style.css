@@ -245,11 +245,37 @@ div .enlarged {
     box-shadow: 0 2px 10px rgb(156,163,175);
     border-radius: 8px;
     padding: 10px 30px 20px 30px;
-    font-size: 12px;
+    font-size: 10px;
     margin-right: 30px;
     margin-top: 20px;
 }
 
+.announcements div h3 {
+    font-size: 15px;
+}
 .announcements h3 {
     margin: 8px 0px 10px 0px;
+}
+
+.achievements {
+    background-color: white;
+    border-radius: 8px;
+    border-bottom: solid 1px #9ca3af;
+    box-shadow: 0 2px 10px rgb(156,163,175);
+    margin-right: 30px;
+    padding: 13px;
+}
+
+.small-container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.small-text {
+    font-size: 12px;
 }
